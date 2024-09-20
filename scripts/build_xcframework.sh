@@ -5,7 +5,7 @@ set -euxo pipefail
 
 xcodebuild archive \
   -workspace CardScan.xcworkspace \
-  -scheme CardScanExample \
+  -scheme CardScan \
   -destination "generic/platform=iOS" \
   -archivePath "build/CardScanArchive" \
   SKIP_INSTALL=NO \
@@ -13,7 +13,7 @@ xcodebuild archive \
 
 xcodebuild archive \
   -workspace CardScan.xcworkspace \
-  -scheme CardScanExample \
+  -scheme CardScan \
   -destination "generic/platform=iOS Simulator" \
   -archivePath "build/CardScanSimulatorArchive" \
   SKIP_INSTALL=NO \
